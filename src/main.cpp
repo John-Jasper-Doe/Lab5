@@ -5,7 +5,7 @@
 
 
 
-#include "common/observer.hpp"
+#include "common/onclick.hpp"
 
 
 #include <iostream>
@@ -20,20 +20,20 @@ void print_main2(const int a) { std::cout << __PRETTY_FUNCTION__ << ": " << a <<
 
 
 int main() {
-  std::cout << "Editor" << std::endl;
+  std::cout << "SVG Editor" << std::endl;
 
-  common::observer<> l1;
-  common::observer<int> l2;
+  common::on_click<> l1;
+  common::on_click<int> l2;
 
-  l1.add_listener(print_main1);
+  l1.append(print_main1);
 
 //  auto l = [](int s) { print_main2(s); };
-  l2.add_listener(print_main2);
+  l2.append(print_main2);
 
   std::this_thread::sleep_for(3s);
 
-  l1.notify_update();
-  l2.notify_update(5);
+  l1.notify();
+  l2.notify(5);
 
   return 0;
 }

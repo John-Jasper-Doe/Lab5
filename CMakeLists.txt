@@ -1,23 +1,26 @@
 cmake_minimum_required(VERSION 3.2)
 
 if(DEFINED ENV{TRAVIS_BUILD_NUMBER})
-    project(editor VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+    project(svg_editor VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 else()
-    project(editor VERSION 0.0.1)
+    project(svg_editor VERSION 0.0.1)
 endif()
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 find_package(Threads)
-add_executable(${PROJECT_NAME} ./src/main.cpp)
+add_executable(${PROJECT_NAME}
+  ./src/main.cpp
+)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
-                CXX_STANDARD 14
+                CXX_STANDARD 17
                 CXX_STANDARD_REQUIRED ON
                 LINK_LIBRARIES pthread
                 COMPILE_OPTIONS "-g;-O0;-Wall;-Wextra;-Werror;-Wpedantic"
                 )
 
+target_include_directories(${PROJECT_NAME} PRIVATE ./src)
 
 # install to bin folder our binaries
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)

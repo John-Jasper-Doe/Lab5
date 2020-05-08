@@ -4,6 +4,9 @@
  */
 
 
+#ifndef COMMON_OBSERVER_HPP_
+#define COMMON_OBSERVER_HPP_
+
 #include <list>
 #include <functional>
 
@@ -30,3 +33,5 @@ public:
 };
 
 } /* common:: */
+
+#endif /* COMMON_OBSERVER_HPP_ */

@@ -9,26 +9,26 @@
 
 
 namespace common {
-  
-  enum class color_tag : char {
-      red
-    , blue
-    , green    
-    , yellow
-    , white
-    , black
-  };
 
-  enum class tool_tag : char {
-      dot
-    , line
-    , rect
-    , circle
-    , eraser
-  };
+enum class color_tag : char {
+    red
+  , blue
+  , green
+  , yellow
+  , white
+  , black
+};
 
-  using color_tag_t = common::color_tag;
-  using tool_tag_t = common::tool_tag;
+enum class tool_tag : char {
+    dot
+  , line
+  , rect
+  , circle
+  , eraser
+};
+
+using color_tag_t = common::color_tag;
+using tool_tag_t = common::tool_tag;
 
 } /* common:: */
 

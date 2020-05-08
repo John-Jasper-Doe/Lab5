@@ -1,12 +1,10 @@
 /**
- * @file tags.hpp
- * @brief The tools discription
+ *  @file tags.hpp
+ *  @brief The tools discription
  */
 
-
-#ifndef TAGS_HPP_
-#define TAGS_HPP_
-
+#ifndef COMMON_TAGS_HPP_
+#define COMMON_TAGS_HPP_
 
 namespace common {
 
@@ -27,10 +25,10 @@ enum class tool_tag : char {
   , eraser
 };
 
+} /* common:: */
+
 using color_tag_t = common::color_tag;
 using tool_tag_t = common::tool_tag;
 
-} /* common:: */
 
-
-#endif /* TAGS_HPP_ */
+#endif /* COMMON_TAGS_HPP_ */

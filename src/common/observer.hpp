@@ -19,11 +19,11 @@ class observer {
 public:
   virtual ~observer<ARGS...>() = default;
 
-  void add_listener(func_ptr_t<ARGS...> listener) {
+  void add_listener(func_ptr_t<ARGS...> listener) noexcept {
     listeners_.push_back(std::move(listener));
   }
 
-  void notify_update(const ARGS& ...args) {
+  void notify_update(const ARGS& ...args) noexcept {
     for (auto& listener: listeners_)
       listener(args...);
   }

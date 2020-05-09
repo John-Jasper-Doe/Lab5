@@ -8,27 +8,31 @@
 #define CORE_BASEMODEL_HPP_
 
 #include "common/observer.hpp"
+#include "common/tags.hpp"
+#include "primitives/point.hpp"
+#include "primitives/elements.hpp"
 #include <memory>
 
 
 namespace svg::core {
 
-class base_model : public common::observer<> {
+template <class T>
+class base_model : protected common::observer<> {
 public:
-  virtual void /* return color */ color() const = 0;
-  virtual void set_color(int /* set color */ color) = 0;
+  virtual color_tag_t color() const = 0;
+  virtual void set_color(color_tag_t color) = 0;
 
-  virtual void /* return tool */ tool() const = 0;
-  virtual void set_tool(int /* set tool */ tag) = 0;
+  virtual tool_tag_t tool() const = 0;
+  virtual void set_tool(tool_tag_t tool) = 0;
 
-  virtual void add_element(/* add geometry element */) = 0;
-  virtual void delete_element(int x, int y) = 0;
+  virtual void add_element(std::unique_ptr<element_t<T>>&&) = 0;
+  virtual void delete_element(const point_t<T>&) = 0;
 
   virtual void open(const std::string& path)  = 0;
   virtual void clear() = 0;
   virtual void save() const = 0;
 
-  virtual const std::list<int /* geometry elements */>& elements() const = 0;
+  virtual const std::list<std::unique_ptr<element_t<T>>>& elements() const = 0;
 };
 
 } /* svg::core:: */

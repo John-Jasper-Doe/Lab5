@@ -10,7 +10,8 @@
 
 #include "common/tags.hpp"
 
-namespace svg::primitives {
+namespace svg {
+namespace primitives {
 
 template <typename T>
 class element {
@@ -25,7 +26,12 @@ public:
   virtual ~element() = default;
 };
 
-} /* svg::primitives:: */
+} /* primitives:: */
+
+template <typename T>
+using element_t = svg::primitives::element<T>;
+
+} /* svg:: */
 
 
 #endif /* PRIMITIVES_ELEMENTS_HPP_ */

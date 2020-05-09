@@ -11,6 +11,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 find_package(Threads)
 add_executable(${PROJECT_NAME}
   ./src/main.cpp
+  ./src/core/model.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES

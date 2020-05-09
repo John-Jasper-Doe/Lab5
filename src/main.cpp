@@ -11,6 +11,8 @@
 #include "primitives/rect.hpp"
 #include "primitives/circle.hpp"
 
+#include "core/model.hpp"
+
 
 #include <iostream>
 #include <thread>
@@ -32,6 +34,8 @@ int main() {
   rect<int> trect(svg::point_t<int>{ 2, 2 }, svg::point_t<int>{ 8, 3 }, common::color_tag::red);
   circle<int> tcircle(svg::point_t<int>{ 6, 6 }, 5, common::color_tag::red);
 
+  svg::core::model model;
+
   common::on_click<> l1;
   common::on_click<int> l2;
 
@@ -49,6 +53,10 @@ int main() {
   std::cout << "Line.x = " << tline.x() << " - Line.y = " << tline.y() << std::endl;
   std::cout << "Rect.x = " << trect.x() << " - Rect.y = " << trect.y() << std::endl;
   std::cout << "Circle.x = " << tcircle.x() << " - Circle.y = " << tcircle.y() << std::endl;
+
+  model.open("dddd");
+  model.add_element(std::make_unique<dot<svg::core::model_type_t>>(svg::point_t<int>{ 2, 4 },
+                                                                   common::color_tag::red));
 
   return 0;
 }

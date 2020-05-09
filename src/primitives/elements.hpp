@@ -12,14 +12,15 @@
 
 namespace svg::primitives {
 
+template <typename T>
 class element {
   color_tag_t tag_;
 
 public:
-  explicit element(color_tag_t tag);
+  explicit element(color_tag_t tag) noexcept : tag_{ tag } { }
   virtual void draw() = 0;
-  virtual int getX() = 0;
-  virtual int getY() = 0;
+  virtual T x() const = 0;
+  virtual T y() const = 0;
 
   virtual ~element() = default;
 };

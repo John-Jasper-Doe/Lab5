@@ -12,6 +12,7 @@
 #include "primitives/circle.hpp"
 
 #include "core/model.hpp"
+#include "core/controller.hpp"
 
 
 #include <iostream>
@@ -55,8 +56,15 @@ int main() {
   std::cout << "Circle.x = " << tcircle.x() << " - Circle.y = " << tcircle.y() << std::endl;
 
   model.open("dddd");
-  model.add_element(std::make_unique<dot<svg::core::model_type_t>>(svg::point_t<int>{ 2, 4 },
+  model.add_element(std::make_unique<dot<svg::core::using_type_t>>(svg::point_t<int>{ 2, 4 },
                                                                    common::color_tag::red));
+
+  std::shared_ptr<svg::core::model> model_ptr = std::make_shared<svg::core::model>();
+  std::shared_ptr<svg::core::controller> ctrl_ptr =
+      std::make_shared<svg::core::controller>(model_ptr);
+
+  ctrl_ptr->open("fffff");
+  ctrl_ptr->canvas_click(svg::point_t<int>{ 2, 4 });
 
   return 0;
 }

@@ -12,6 +12,7 @@ find_package(Threads)
 add_executable(${PROJECT_NAME}
   ./src/main.cpp
   ./src/core/model.cpp
+  ./src/core/controller.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES

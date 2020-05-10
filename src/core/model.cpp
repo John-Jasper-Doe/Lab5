@@ -24,12 +24,12 @@ void svg::core::model::set_tool(tool_tag_t tool) {
   tool_tag_ = tool;
 }
 
-void model::add_element(std::unique_ptr<element_t<using_type_t> >&& elem) {
+void model::add_element(std::unique_ptr<element_t<common::elem_type_t> >&& elem) {
   elements_.push_back(std::move(elem));
   notify_update();
 }
 
-void model::delete_element(const point_t<using_type_t>& point) {
+void model::delete_element(const point_t<common::elem_type_t>& point) {
   for (auto it = elements_.rbegin(); it != elements_.rend(); ++it) {
     if ((*it)->x() == point.x && (*it)->y() == point.y) {
       elements_.erase(it.base());
@@ -66,7 +66,7 @@ void model::save() const {
   }
 }
 
-const std::list<std::unique_ptr<element_t<using_type_t> > >& model::elements() const {
+const std::list<std::unique_ptr<element_t<common::elem_type_t> > >& model::elements() const {
   return elements_;
 }
 

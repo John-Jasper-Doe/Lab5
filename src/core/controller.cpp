@@ -10,7 +10,7 @@
 
 namespace svg::core {
 
-controller::controller(std::shared_ptr<base_model<using_type_t> > model)
+controller::controller(std::shared_ptr<base_model<common::elem_type_t> > model)
   : model_(model) {
   assert(model_);
 }
@@ -23,11 +23,11 @@ void controller::set_tool(tool_tag_t tool) {
   model_->set_tool(tool);
 }
 
-void controller::canvas_click(const point_t<using_type_t>&) {
+void controller::canvas_click(const point_t<common::elem_type_t>&) {
   switch (model_->tool()) {
     case common::tool_tag::dot:
-      model_->add_element(std::make_unique<svg::primitives::dot<using_type_t>>(
-                            svg::point_t<using_type_t>{ 2, 4 },
+      model_->add_element(std::make_unique<svg::primitives::dot<common::elem_type_t>>(
+                            svg::point_t<common::elem_type_t>{ 2, 4 },
                             common::color_tag::red));
       break;
 

@@ -5,13 +5,15 @@
 
 
 #include "controller.hpp"
-#include "primitives/dot.hpp"
+#include "primitives/creator.hpp"
 #include <assert.h>
 
 namespace svg::core {
 
+const common::elem_type_t SHIFT_DEFAULT = 10;
+
 controller::controller(std::shared_ptr<base_model<common::elem_type_t> > model)
-  : model_(model) {
+  : model_(model), creator_(std::make_unique<primitives::creator>()) {
   assert(model_);
 }
 
@@ -23,16 +25,28 @@ void controller::set_tool(tool_tag_t tool) {
   model_->set_tool(tool);
 }
 
-void controller::canvas_click(const point_t<common::elem_type_t>&) {
+void controller::canvas_click(const point_t<common::elem_type_t>& p) {
   switch (model_->tool()) {
     case common::tool_tag::dot:
-      model_->add_element(std::make_unique<svg::primitives::dot<common::elem_type_t>>(
-                            svg::point_t<common::elem_type_t>{ 2, 4 },
-                            common::color_tag::red));
+      model_->add_element(creator_->create_dot(p, model_->color()));
       break;
 
-    default:
-      throw std::runtime_error("Unsupported tool");
+    case common::tool_tag::line:
+      model_->add_element(creator_->create_line(p, p + SHIFT_DEFAULT, model_->color()));
+      break;
+
+    case common::tool_tag::rect:
+      model_->add_element(creator_->create_rect(p, p + SHIFT_DEFAULT, model_->color()));
+      break;
+
+    case common::tool_tag::circle:
+      model_->add_element(creator_->create_circle(p, SHIFT_DEFAULT, model_->color()));
+      break;
+
+    case common::tool_tag::eraser:
+      model_->delete_element(p);
+      break;
+
   }
 }
 

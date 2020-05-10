@@ -25,6 +25,16 @@ struct point {
 template <class T>
 using point_t = svg::primitives::point<T>;
 
+template <class T>
+point_t<T> operator+(const point_t<T>& src, T value) {
+  return point_t<T>{ src.x + value, src.y + value };
+}
+
+template <class T>
+point_t<T> operator-(const point_t<T>& src, T value) {
+  return point_t<T>{ src.x - value, src.y - value };
+}
+
 } /* svg:: */
 
 #endif /* PRIMITIVES_POINT_HPP_ */

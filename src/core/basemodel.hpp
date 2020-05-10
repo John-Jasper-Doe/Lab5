@@ -35,6 +35,8 @@ public:
   virtual const std::list<std::unique_ptr<element_t<T>>>& elements() const = 0;
 };
 
+using using_type_t = int;
+
 } /* svg::core:: */
 
 #endif /* CORE_BASEMODEL_HPP_ */

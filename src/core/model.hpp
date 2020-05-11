@@ -11,7 +11,8 @@
 #include "common/common.hpp"
 #include "utils/logger.hpp"
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 class model : public svg::core::base_model<common::elem_type_t> {
   std::list<std::unique_ptr<element_t<common::elem_type_t>>> elements_;
@@ -37,6 +38,7 @@ public:
   const std::list<std::unique_ptr<element_t<common::elem_type_t>>>& elements() const override;
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_MODEL_HPP_ */

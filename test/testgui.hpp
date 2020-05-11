@@ -8,8 +8,10 @@
 
 #include <memory>
 
-namespace svg::core {
-  class viewer;
+namespace svg {
+  namespace core {
+    class viewer;
+  }
 }
 
 namespace test {

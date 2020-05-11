@@ -12,7 +12,8 @@
 #include "primitives/basecreator.hpp"
 #include "common/common.hpp"
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 class controller : public base_controller<common::elem_type_t> {
   std::shared_ptr<base_model<common::elem_type_t>> model_;
@@ -31,6 +32,7 @@ public:
   void save() const override;
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_CONTROLLER_HPP_ */

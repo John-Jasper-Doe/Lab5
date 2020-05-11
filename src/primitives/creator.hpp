@@ -15,8 +15,8 @@
 #include "common/common.hpp"
 #include "utils/logger.hpp"
 
-namespace svg::primitives {
-
+namespace svg {
+namespace primitives {
 
 class creator : public base_creator<common::elem_type_t> {
   utils::logger logger_{ "Creator" };
@@ -35,6 +35,7 @@ public:
                                                              color_tag_t color) override;
 };
 
-} /* svg::primitives:: */
+} /* primitives:: */
+} /* svg:: */
 
 #endif /* PRIMITIVES_CREATOR_HPP_ */

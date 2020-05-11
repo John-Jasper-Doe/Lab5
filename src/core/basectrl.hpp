@@ -12,7 +12,8 @@
 #include <string>
 
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 template <class T>
 class base_controller {
@@ -29,6 +30,7 @@ public:
   virtual void save() const = 0;
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_BASECTRL_HPP_ */

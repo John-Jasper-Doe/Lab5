@@ -11,7 +11,8 @@
 #include "elements.hpp"
 #include "utils/logger.hpp"
 
-namespace svg::primitives {
+namespace svg {
+namespace primitives {
 
 template <typename T>
 class dot : public element<T> {
@@ -37,6 +38,7 @@ public:
   T y() const override { return point_.y; }
 };
 
-} /* svg::primitives:: */
+} /* primitives:: */
+} /* svg:: */
 
 #endif /* PRIMITIVES_DOT_HPP_ */

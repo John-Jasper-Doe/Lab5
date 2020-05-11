@@ -9,10 +9,12 @@
 
 #include "common/onclick.hpp"
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class btn_clear : public common::on_click<> { };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_BTNCLEAR_HPP_ */

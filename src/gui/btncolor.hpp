@@ -10,7 +10,8 @@
 #include "common/onclick.hpp"
 #include "common/tags.hpp"
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class btn_color : public common::on_click<> {
   color_tag_t color_;
@@ -20,6 +21,7 @@ public:
   color_tag_t color() const { return color_; }
 };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_BTNCOLOR_HPP_ */

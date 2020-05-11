@@ -6,7 +6,8 @@
 
 #include "creator.hpp"
 
-namespace svg::primitives {
+namespace svg {
+namespace primitives {
 
 std::unique_ptr<dot<common::elem_type_t>> creator::create_dot(
     point_t<common::elem_type_t> p0, color_tag_t color) {
@@ -34,4 +35,5 @@ std::unique_ptr<circle<common::elem_type_t>> creator::create_circle(
   return std::make_unique<circle<common::elem_type_t>>(p0, r, color);
 }
 
-} /* svg::primitives:: */
+} /* primitives:: */
+} /* svg:: */

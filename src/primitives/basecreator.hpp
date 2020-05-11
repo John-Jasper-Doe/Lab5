@@ -11,7 +11,8 @@
 #include "common/tags.hpp"
 #include <memory>
 
-namespace svg::primitives {
+namespace svg {
+namespace primitives {
 
 /* Forward declaration */
 template <class T>
@@ -38,6 +39,7 @@ public:
   virtual std::unique_ptr<circle<T>> create_circle(point_t<T> p0, T r, color_tag_t color) = 0;
 };
 
-} /* svg::primitives:: */
+} /* primitives:: */
+} /* svg:: */
 
 #endif /* PRIMITIVES_BASECREATOR_HPP_ */

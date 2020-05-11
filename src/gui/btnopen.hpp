@@ -10,10 +10,12 @@
 #include "common/onclick.hpp"
 #include <string>
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class btn_open : public common::on_click<const std::string> { };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_BTNOPEN_HPP_ */

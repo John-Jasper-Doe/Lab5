@@ -7,7 +7,8 @@
 #ifndef CORE_BASEVIEWER_HPP_
 #define CORE_BASEVIEWER_HPP_
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 class base_viewer {
 public:
@@ -15,6 +16,7 @@ public:
   virtual void redraw() = 0;
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_BASEVIEWER_HPP_ */

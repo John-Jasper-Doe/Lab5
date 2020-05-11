@@ -9,10 +9,12 @@
 
 #include "common/onclick.hpp"
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class btn_save : public common::on_click<> { };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_BTNSAVE_HPP_ */

@@ -6,7 +6,8 @@
 
 #include "core/model.hpp"
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 color_tag_t svg::core::model::color() const {
   return color_tag_;
@@ -78,4 +79,5 @@ const std::list<std::unique_ptr<element_t<common::elem_type_t>>>& model::element
 }
 
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */

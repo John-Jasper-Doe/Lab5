@@ -8,7 +8,8 @@
 #include "primitives/creator.hpp"
 #include <assert.h>
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 const common::elem_type_t SHIFT_DEFAULT = 10;
 
@@ -63,4 +64,5 @@ void controller::save() const {
 }
 
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */

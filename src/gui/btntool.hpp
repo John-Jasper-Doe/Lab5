@@ -10,7 +10,8 @@
 #include "common/onclick.hpp"
 #include "common/tags.hpp"
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class btn_tool : public common::on_click<> {
   tool_tag_t tool_;
@@ -20,6 +21,7 @@ public:
   tool_tag_t tool() const { return tool_; }
 };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_BTNTOOL_HPP_ */

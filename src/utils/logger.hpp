@@ -9,7 +9,8 @@
 
 #include <string>
 
-namespace svg::utils {
+namespace svg {
+namespace utils {
 
 class logger {
   std::string loc_{ "" };
@@ -19,6 +20,7 @@ public:
   void info(const std::string& msg) const noexcept;
 };
 
-} /* svg::utils:: */
+} /* utils:: */
+} /* svg:: */
 
 #endif /* UTILS_LOGGER_HPP_ */

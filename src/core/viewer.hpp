@@ -19,7 +19,8 @@
 #include "utils/logger.hpp"
 #include <memory>
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 class viewer : public svg::core::base_viewer {
   std::shared_ptr<svg::core::base_model<common::elem_type_t>> model_;
@@ -70,6 +71,7 @@ public:
   void on_btn_color_black_click() noexcept { btn_black_.click(); }
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_VIEWER_HPP_ */

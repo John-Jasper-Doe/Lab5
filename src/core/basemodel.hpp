@@ -14,7 +14,8 @@
 #include <memory>
 
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 template <class T>
 class base_model : public common::observer<> {
@@ -37,6 +38,7 @@ public:
   virtual const std::list<std::unique_ptr<element_t<T>>>& elements() const = 0;
 };
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */
 
 #endif /* CORE_BASEMODEL_HPP_ */

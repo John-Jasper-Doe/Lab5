@@ -11,10 +11,12 @@
 #include "common/common.hpp"
 #include "primitives/point.hpp"
 
-namespace svg::gui {
+namespace svg {
+namespace gui {
 
 class canvas : public common::on_click<point_t<common::elem_type_t>> { };
 
-} /* svg::gui:: */
+} /* gui:: */
+} /* svg:: */
 
 #endif /* GUI_CANVAS_HPP_ */

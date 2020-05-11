@@ -5,7 +5,8 @@
 
 #include "viewer.hpp"
 
-namespace svg::core {
+namespace svg {
+namespace core {
 
 viewer::viewer(std::shared_ptr<svg::core::base_model<common::elem_type_t>> model,
                std::shared_ptr<svg::core::base_controller<common::elem_type_t>> ctrl) noexcept
@@ -46,4 +47,5 @@ void viewer::redraw() {
   logger_.info("Redrawed");
 }
 
-} /* svg::core:: */
+} /* core:: */
+} /* svg:: */

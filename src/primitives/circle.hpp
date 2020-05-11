@@ -11,7 +11,8 @@
 #include "elements.hpp"
 #include "utils/logger.hpp"
 
-namespace svg::primitives {
+namespace svg {
+namespace primitives {
 
 template <typename T>
 class circle : public element<T> {
@@ -38,6 +39,7 @@ public:
   T y() const override { return point0_.y; }
 };
 
-} /* svg::primitives:: */
+} /* primitives:: */
+} /* svg:: */
 
 #endif /* PRIMITIVES_CIRCLE_HPP_ */

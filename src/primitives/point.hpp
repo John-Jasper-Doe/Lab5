@@ -14,7 +14,7 @@ namespace primitives {
 
 template <class T>
 struct point {
-  static_assert (std::is_integral_v<T>, "Is not integral type");
+  static_assert (std::is_integral<T>::value, "Is not integral type");
 
   T x;
   T y;

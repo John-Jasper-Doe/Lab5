@@ -17,7 +17,7 @@
 namespace svg::core {
 
 template <class T>
-class base_model : protected common::observer<> {
+class base_model : public common::observer<> {
 public:
   virtual ~base_model() = default;
 

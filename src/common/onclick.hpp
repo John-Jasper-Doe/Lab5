@@ -20,7 +20,7 @@ public:
   void append(func_ptr_t<ARGS...>&& subscriber) noexcept {
     subscribers_.add_listener(std::move(subscriber));
   }
-  void notify(const ARGS& ...args) {
+  void click(const ARGS& ...args) {
     subscribers_.notify_update(args...);
   }
 };

@@ -1,5 +1,5 @@
 /**
- *  @file basemodel.h
+ *  @file basemodel.hpp
  *  @brief Description of the base model interface.
  */
 

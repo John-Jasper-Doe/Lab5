@@ -23,19 +23,19 @@ viewer::viewer(std::shared_ptr<svg::core::base_model<common::elem_type_t>> model
   };
   btn_dot_.append(tool_selecter(btn_dot_));
   btn_line_.append(tool_selecter(btn_line_));
-  btn_rect_.append(tool_selecter(btn_line_));
-  btn_circle_.append(tool_selecter(btn_line_));
-  btn_eraser_.append(tool_selecter(btn_line_));
+  btn_rect_.append(tool_selecter(btn_rect_));
+  btn_circle_.append(tool_selecter(btn_circle_));
+  btn_eraser_.append(tool_selecter(btn_eraser_));
 
   auto color_selecter = [ctrl](gui::btn_color btn) {
     return [ctrl, btn]() { ctrl->set_color(btn.color()); };
   };
   btn_red_.append(color_selecter(btn_red_));
-  btn_blue_.append(color_selecter(btn_red_));
-  btn_green_.append(color_selecter(btn_red_));
-  btn_yellow_.append(color_selecter(btn_red_));
-  btn_white_.append(color_selecter(btn_red_));
-  btn_black_.append(color_selecter(btn_red_));
+  btn_blue_.append(color_selecter(btn_blue_));
+  btn_green_.append(color_selecter(btn_green_));
+  btn_yellow_.append(color_selecter(btn_yellow_));
+  btn_white_.append(color_selecter(btn_white_));
+  btn_black_.append(color_selecter(btn_black_));
 }
 
 void viewer::redraw() {

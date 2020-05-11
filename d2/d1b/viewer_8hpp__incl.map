@@ -1,0 +1,18 @@
+<map id="src/core/viewer.hpp" name="src/core/viewer.hpp">
+<area shape="rect" id="node2" href="$d8/d93/baseviewer_8hpp.html" title="Description of the base viewer interface. " alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$de/d43/basemodel_8hpp.html" title="Description of the base model interface. " alt="" coords="150,80,271,107"/>
+<area shape="rect" id="node12" href="$dc/d38/basectrl_8hpp.html" title="Description of the base controller interface. " alt="" coords="347,80,448,107"/>
+<area shape="rect" id="node14" href="$d3/dc7/canvas_8hpp.html" title="Definition on the canvas class. " alt="" coords="473,80,591,107"/>
+<area shape="rect" id="node17" href="$d8/df4/btnopen_8hpp.html" title="Definition on the open button class. " alt="" coords="758,80,885,107"/>
+<area shape="rect" id="node18" href="$dd/d77/btnsave_8hpp.html" title="Definition on the save button class. " alt="" coords="909,80,1033,107"/>
+<area shape="rect" id="node19" href="$d1/d5c/btnclear_8hpp.html" title="Definition on the clear button class. " alt="" coords="1057,80,1181,107"/>
+<area shape="rect" id="node20" href="$dd/d04/btntool_8hpp.html" title="Definition on the tool button class. " alt="" coords="1205,80,1323,107"/>
+<area shape="rect" id="node21" href="$d9/de1/btncolor_8hpp.html" title="Definition on the color button class. " alt="" coords="1347,80,1471,107"/>
+<area shape="rect" id="node22" href="$d6/da3/logger_8hpp.html" title="utils/logger.hpp" alt="" coords="615,80,734,107"/>
+<area shape="rect" id="node4" href="$d6/da0/observer_8hpp.html" title="Description of the observer template class. " alt="" coords="21,229,187,256"/>
+<area shape="rect" id="node7" href="$d4/d49/tags_8hpp.html" title="The tools discription. " alt="" coords="324,229,463,256"/>
+<area shape="rect" id="node8" href="$d0/de4/point_8hpp.html" title="Definition on the point class. " alt="" coords="431,155,579,181"/>
+<area shape="rect" id="node10" href="$d8/d35/elements_8hpp.html" title="Description of the interface of geometric elements. " alt="" coords="79,155,255,181"/>
+<area shape="rect" id="node15" href="$d5/da9/onclick_8hpp.html" title="Subscribers by click. " alt="" coords="893,155,1048,181"/>
+<area shape="rect" id="node16" href="$dd/d3a/common_8hpp.html" title="Common useges. " alt="" coords="604,155,772,181"/>
+</map>

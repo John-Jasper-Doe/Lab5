@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['on_5fbtn_5fcircle_5fclick',['on_btn_circle_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#aefa075a588904c98fbc6fbf45e3cfb9d',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fclear_5fclick',['on_btn_clear_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a69945f256f603a509710b38d21e86fd3',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fblack_5fclick',['on_btn_color_black_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#ae1858093557045d3e2948fa386db2f26',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fblue_5fclick',['on_btn_color_blue_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#ac8f78c7b25bdad8c1489704f00a399dd',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fgreen_5fclick',['on_btn_color_green_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#abb3466b2119be2881c04de1f6561c221',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fred_5fclick',['on_btn_color_red_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a9d6df7a25afd88a00fa0ad8d6b2e6252',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fwhite_5fclick',['on_btn_color_white_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a247656f63df4abdf62ebe1ef3fccc36d',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fcolor_5fyellow_5fclick',['on_btn_color_yellow_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a9de65b535bf003ccf1d8ad52dec21aa5',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fdot_5fclick',['on_btn_dot_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#ae7f542e2dff7f1378b758b0c33e9b9a0',1,'svg::core::viewer']]],
+  ['on_5fbtn_5feraser_5fclick',['on_btn_eraser_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#aca1a2ccdf34a911624727b3af616d62b',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fline_5fclick',['on_btn_line_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#ae41243f886af4ff3ee4bc06426fa3b95',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fopen_5fclick',['on_btn_open_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a87b54220c2bfc42101a5a714d2c1a977',1,'svg::core::viewer']]],
+  ['on_5fbtn_5frect_5fclick',['on_btn_rect_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a46f8ba6a546443a32381412e334c17cb',1,'svg::core::viewer']]],
+  ['on_5fbtn_5fsave_5fclick',['on_btn_save_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#ac9aaf7dec31678f3dfe7ebade5d6ad28',1,'svg::core::viewer']]],
+  ['on_5fcanvas_5fclick',['on_canvas_click',['../d7/d88/classsvg_1_1core_1_1viewer.html#a3373feead3aeb9d3fc2a4efcaefc898a',1,'svg::core::viewer']]],
+  ['open',['open',['../da/dae/classsvg_1_1core_1_1base__controller.html#a43e6a67b96b201dc6bd38221c2b04393',1,'svg::core::base_controller::open()'],['../de/d88/classsvg_1_1core_1_1base__model.html#a7376542e6be069f041a7e14faea3a20d',1,'svg::core::base_model::open()'],['../d1/d21/classsvg_1_1core_1_1controller.html#a9c62d87b4a5e97af8150161122ec217f',1,'svg::core::controller::open()'],['../d7/d3b/classsvg_1_1core_1_1model.html#ac56af295b9406d8b485388b397b0797a',1,'svg::core::model::open()']]],
+  ['operator_2b',['operator+',['../d9/dbe/namespacesvg.html#af5a25e448d20c815eac0775cacf700e7',1,'svg']]],
+  ['operator_2d',['operator-',['../d9/dbe/namespacesvg.html#ab33fbb874911739e996c3f243d74a2bf',1,'svg']]],
+  ['operator_3d',['operator=',['../d8/de0/classsvg_1_1primitives_1_1circle.html#a2da5c5c794bbe9f7bb0ff840434cf53e',1,'svg::primitives::circle::operator=(const circle&lt; T &gt; &amp;)=delete'],['../d8/de0/classsvg_1_1primitives_1_1circle.html#a2c25d6aec9fd2e10c2ca499c0f1a87fa',1,'svg::primitives::circle::operator=(circle&lt; T &gt; &amp;&amp;)=delete'],['../d5/d84/classsvg_1_1primitives_1_1dot.html#a8999c14f5f1a7d77e4e69adea0735689',1,'svg::primitives::dot::operator=(const dot&lt; T &gt; &amp;)=delete'],['../d5/d84/classsvg_1_1primitives_1_1dot.html#a6c491a49099b0dbf3eb1b488817a6797',1,'svg::primitives::dot::operator=(dot&lt; T &gt; &amp;&amp;)=delete'],['../df/dec/classsvg_1_1primitives_1_1line.html#a8a9ae8c057f5a6d3c81127d9392ac027',1,'svg::primitives::line::operator=(const line&lt; T &gt; &amp;)=delete'],['../df/dec/classsvg_1_1primitives_1_1line.html#a2601c2cf91771902e77382e2fa41c3ac',1,'svg::primitives::line::operator=(line&lt; T &gt; &amp;&amp;)=delete'],['../d0/d97/classsvg_1_1primitives_1_1rect.html#a63bdf82359d7af21ec8c6804127f4b0c',1,'svg::primitives::rect::operator=(const rect&lt; T &gt; &amp;)=delete'],['../d0/d97/classsvg_1_1primitives_1_1rect.html#a50c7b4c0f9e9def52e56ed9d673127ba',1,'svg::primitives::rect::operator=(rect&lt; T &gt; &amp;&amp;)=delete']]]
+];

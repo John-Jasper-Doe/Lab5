@@ -1,0 +1,16 @@
+<map id="src/utils/logger.hpp" name="src/utils/logger.hpp">
+<area shape="rect" id="node2" href="$dc/ddc/model_8hpp.html" title="Description of the model class. " alt="" coords="131,80,277,107"/>
+<area shape="rect" id="node5" href="$df/d3c/viewer_8hpp.html" title="Description of the viewer class. " alt="" coords="301,80,445,107"/>
+<area shape="rect" id="node8" href="$d6/d0e/circle_8hpp.html" title="Definition on the circle class. " alt="" coords="470,80,642,107"/>
+<area shape="rect" id="node9" href="$d0/dae/creator_8hpp.html" title="Description of the creator class. " alt="" coords="705,155,889,181"/>
+<area shape="rect" id="node12" href="$d0/dd7/dot_8hpp.html" title="Definition on the dot element class. " alt="" coords="717,80,877,107"/>
+<area shape="rect" id="node13" href="$d3/d9d/line_8hpp.html" title="Definition on the line class. " alt="" coords="902,80,1063,107"/>
+<area shape="rect" id="node14" href="$d0/db4/rect_8hpp.html" title="Definition on the rct class. " alt="" coords="1087,80,1251,107"/>
+<area shape="rect" id="node15" href="$d3/d30/logger_8cpp.html" title="Implementation of logger. " alt="" coords="1276,80,1417,107"/>
+<area shape="rect" id="node3" href="$d6/db4/model_8cpp.html" title="Implementation of the model class. " alt="" coords="5,155,149,181"/>
+<area shape="rect" id="node4" href="$df/d0a/main_8cpp.html" title="The main project file is &quot;SVG Editor&quot;. " alt="" coords="173,155,277,181"/>
+<area shape="rect" id="node6" href="$d4/dc9/viewer_8cpp.html" title="Implementation of the viewer class. " alt="" coords="302,155,445,181"/>
+<area shape="rect" id="node7" href="$df/dd1/testgui_8cpp.html" title="Implementation of the test GUI class. " alt="" coords="469,155,592,181"/>
+<area shape="rect" id="node10" href="$d1/d47/controller_8cpp.html" title="Implementation of the controller class. " alt="" coords="617,229,780,256"/>
+<area shape="rect" id="node11" href="$d9/de2/creator_8cpp.html" title="Implementation of the creator class. " alt="" coords="805,229,987,256"/>
+</map>

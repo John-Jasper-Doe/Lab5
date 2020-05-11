@@ -19,6 +19,8 @@ namespace svg::core {
 template <class T>
 class base_model : protected common::observer<> {
 public:
+  virtual ~base_model() = default;
+
   virtual color_tag_t color() const = 0;
   virtual void set_color(color_tag_t color) = 0;
 

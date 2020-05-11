@@ -13,6 +13,7 @@ add_executable(${PROJECT_NAME}
   ./src/main.cpp
   ./src/core/model.cpp
   ./src/core/controller.cpp
+  ./src/core/viewer.cpp
   ./src/primitives/creator.cpp
   ./src/utils/logger.cpp
 )

@@ -35,7 +35,7 @@ void model::add_element(std::unique_ptr<element_t<common::elem_type_t> >&& elem)
 void model::delete_element(const point_t<common::elem_type_t>& point) {
   for (auto it = elements_.rbegin(); it != elements_.rend(); ++it) {
     if ((*it)->x() == point.x && (*it)->y() == point.y) {
-      elements_.erase(it.base());
+      elements_.erase((++it).base());
       logger_.info("Element deleted");
       notify_update();
       break;

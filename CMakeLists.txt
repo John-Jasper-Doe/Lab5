@@ -16,6 +16,7 @@ add_executable(${PROJECT_NAME}
   ./src/core/viewer.cpp
   ./src/primitives/creator.cpp
   ./src/utils/logger.cpp
+  ./test/testgui.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES

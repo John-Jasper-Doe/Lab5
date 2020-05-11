@@ -13,11 +13,14 @@
 #include "rect.hpp"
 #include "circle.hpp"
 #include "common/common.hpp"
+#include "utils/logger.hpp"
 
 namespace svg::primitives {
 
 
 class creator : public base_creator<common::elem_type_t> {
+  utils::logger logger_{ "Creator" };
+
 public:
   std::unique_ptr<dot<common::elem_type_t>> create_dot(point_t<common::elem_type_t> p0,
                                                        color_tag_t color) override;

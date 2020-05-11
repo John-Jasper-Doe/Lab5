@@ -9,6 +9,7 @@
 
 #include "basemodel.hpp"
 #include "common/common.hpp"
+#include "utils/logger.hpp"
 
 namespace svg::core {
 
@@ -17,6 +18,7 @@ class model : public svg::core::base_model<common::elem_type_t> {
   std::string path_{ "" };
   tool_tag_t tool_tag_{ common::tool_tag::dot };
   color_tag_t color_tag_{ common::color_tag::red };
+  utils::logger logger_{ "Model" };
 
 public:
   color_tag_t color() const override;

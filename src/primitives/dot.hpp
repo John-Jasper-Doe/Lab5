@@ -9,17 +9,19 @@
 
 #include "point.hpp"
 #include "elements.hpp"
+#include "utils/logger.hpp"
 
 namespace svg::primitives {
 
 template <typename T>
 class dot : public element<T> {
   point_t<T> point_;
+  utils::logger logger_{ "Dot" };
 
 public:
   explicit dot(const point_t<T>& point, color_tag_t color) noexcept
     : element<T>(color), point_{ point.x, point.y }
-  { }
+  { logger_.info("Created"); }
 
   ~dot() = default;
 
@@ -30,7 +32,7 @@ public:
   dot<T> operator=(const dot<T>&) = delete;
   dot<T> operator=(dot<T>&&) = delete;
 
-  void draw() override { /* some work */ }
+  void draw() override { /* some work */ logger_.info("Drawed"); }
   T x() const override { return point_.x; }
   T y() const override { return point_.y; }
 };

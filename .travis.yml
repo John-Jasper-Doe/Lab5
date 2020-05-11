@@ -28,5 +28,5 @@ deploy:
   on:
     branch: master
   script:
-  - curl -T editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ujohn-jasper-doe:$BINTRAY_API_KEY "https://api.bintray.com/content/john-jasper-doe/otus-cpp/homeworks/editor/$TRAVIS_BUILD_NUMBER/editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -T svg_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ujohn-jasper-doe:$BINTRAY_API_KEY "https://api.bintray.com/content/john-jasper-doe/otus-cpp/homeworks/svg_editor/$TRAVIS_BUILD_NUMBER/svg_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
 

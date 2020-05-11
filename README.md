@@ -16,4 +16,4 @@ This project was completed using the following design patterns:
 
 The idea of the project is that the “Viewer” subscribes to the “Model” redrawing events, but since the “Viewer” is a GUI, it can still send messages to the “Controller” that the user has changed the tool or color ...
 
-When the user selects the instrument, the “Viewer” informs the “Controller”, and he changes the “Model” and she notifies the listeners (“Spectator”) of her changes and asks to redraw the “Spectator”.
+When the user selects the instrument, the “Viewer” informs the “Controller”, and he changes the “Model” and she notifies the listeners (“Viewer”) of her changes and asks to redraw the “Viewer”.

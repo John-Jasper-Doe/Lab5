@@ -56,8 +56,8 @@ int main() {
   std::cout << "Circle.x = " << tcircle.x() << " - Circle.y = " << tcircle.y() << std::endl;
 
   model.open("dddd");
-  model.add_element(std::make_unique<dot<svg::core::using_type_t>>(svg::point_t<int>{ 2, 4 },
-                                                                   common::color_tag::red));
+  model.add_element(std::make_unique<dot<common::elem_type_t>>(svg::point_t<int>{ 2, 4 },
+                                                               common::color_tag::red));
 
   std::shared_ptr<svg::core::model> model_ptr = std::make_shared<svg::core::model>();
   std::shared_ptr<svg::core::controller> ctrl_ptr =
